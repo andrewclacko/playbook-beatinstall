@@ -1,5 +1,5 @@
 ---
-- hosts: linuxl
+- hosts: linux
   become: yes
   become_user: clacko
   roles:
