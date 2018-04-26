@@ -1,0 +1,5 @@
+---
+
+- src: git@https://github.com/andrewclacko/role-beatinstall
+  scm: git
+  version: master
