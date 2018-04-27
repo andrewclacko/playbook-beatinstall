@@ -3,8 +3,10 @@
   become: yes
   become_user: clacko
   
-#  pre_tasks:
-#     - shell: vim /tmp/testfile
+  pre_tasks:
+  get_url:
+    url: https://www.elastic.co/downloads/past-releases/metricbeat-6-0-1
+    dest: /tmp/metricbeat-6-0-1
 
   roles:
     - role-beatinstall
