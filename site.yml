@@ -3,14 +3,14 @@
   become: yes
   become_user: clacko
   
-  pre_tasks:
-     - shell: vim /tmp/testfile
+#  pre_tasks:
+#     - shell: vim /tmp/testfile
 
   roles:
     - role-beatinstall
 
-  post_tasks:
-     - shell: vim /tmp/testfile2
+#  post_tasks:
+#     - shell: vim /tmp/testfile2
 
 
 
