@@ -10,8 +10,6 @@
   
 - hosts: linux
   become: yes
-  become_user: clacko
-  become_method: sudo
   roles:
     - role-beatinstall
 
