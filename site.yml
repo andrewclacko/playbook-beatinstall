@@ -19,4 +19,4 @@
   post_tasks:
     - name: deleting downloaded files
       shell: rm /tmp/*.rpm
-      ignore_warnings: yes
+      warn: False
