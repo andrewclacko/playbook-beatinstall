@@ -12,3 +12,9 @@
   become: yes
   roles:
     - role-beatinstall
+
+  post_tasks:
+    - name: deleting downloaded files
+      file:
+        path: /tmp/*.rpm
+        state: absent
