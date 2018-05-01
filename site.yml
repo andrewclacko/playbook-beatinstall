@@ -19,5 +19,5 @@
   post_tasks:
     - name: deleting downloaded files
       file:
-        path: /tmp/*.rpm
+        path: "/tmp/*.rpm"
         state: absent
