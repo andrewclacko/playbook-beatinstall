@@ -11,3 +11,6 @@ beats: this is either metric/file etc
 version: version you want to install
 logstaship: name or ip of the logstash server
 role: server role, e.g. RabbitMq, MongoDB. Reason is all have different agent YML files that are copied over form template directory.
+
+GROUP_VARS/ALL
+source variable is for the location of the rpm.
