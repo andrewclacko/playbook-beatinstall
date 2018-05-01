@@ -5,9 +5,10 @@
   pre_tasks:
     - name: downloading files to jenkins
       get_url:
-        url: "{{ source }}/{{ beats }}/{{ beats }}-6.0.1-x86_64.rpm"
+        url: "{{ source }}/{{ beats }}/{{ beats }}-{{ version }}-x86_64.rpm"
         dest: /tmp
-  
+       
+
 - hosts: linux
   become: yes
   roles:
@@ -18,5 +19,5 @@
   become_user: clacko
   post_tasks:
     - name: deleting downloaded files
-      shell: rm /tmp/*.rpm
-      warn: False
+      file: /tmp/{{ beats }}-{{ version }}-x86_64.rpm
+      state: absent
