@@ -19,5 +19,5 @@
   become_user: clacko
   post_tasks:
     - name: deleting downloaded files
-      file: /tmp/{{ beats }}-{{ version }}-x86_64.rpm
+      file: "/tmp/{{ beats }}-{{ version }}-x86_64.rpm"
       state: absent
