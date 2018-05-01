@@ -18,6 +18,4 @@
   become_user: clacko
   post_tasks:
     - name: deleting downloaded files
-      file:
-        path: "/tmp/*.rpm"
-        state: absent
+      shell: rm /tmp/*.rpm
