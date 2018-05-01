@@ -13,6 +13,9 @@
   roles:
     - role-beatinstall
 
+- hosts: localhost
+  become: yes
+  become_user: clacko
   post_tasks:
     - name: deleting downloaded files
       file:
